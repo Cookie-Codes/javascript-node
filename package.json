@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start:dev": "nodemon",
-    "doc" : "rimraf ./doc && typedoc",
+    "doc" : "rimraf ./out && jsdoc .",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "eslint \"**/*.js\" --quiet --fix",
     "test:coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
