@@ -1,0 +1,26 @@
+{
+  "name": "nodejavascriptstarter",
+  "version": "1.0.0",
+  "description": "A Starter Setup For Javascript Projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start:dev": "nodemon",
+    "doc" : "rimraf ./doc && typedoc",
+    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "eslint \"**/*.js\" --quiet --fix",
+    "test:coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "author": "Akash Chaudhari",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^3.0.9",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "jsdoc": "^3.6.3",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0"
+  }
+}
